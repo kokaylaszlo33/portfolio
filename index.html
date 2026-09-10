@@ -1,90 +1,233 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        color: #333;
-      }
-      header {
-        background: #333;
-        color: #fff;
-        padding: 1rem 0;
-        text-align: center;
-      }
-      nav {
-        background: #444;
-        padding: 1rem;
-        text-align: center;
-      }
-      nav a {
-        color: #fff;
-        margin: 0 1rem;
-        text-decoration: none;
-      }
-      nav a:hover {
-        text-decoration: underline;
-      }
-      main {
-        max-width: 1000px;
-        margin: 2rem auto;
-        padding: 0 1rem;
-      }
-      section {
-        margin: 2rem 0;
-      }
-      h2 {
-        margin-bottom: 1rem;
-        color: #333;
-      }
-      footer {
-        background: #333;
-        color: #fff;
-        text-align: center;
-        padding: 1rem;
-        margin-top: 2rem;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Welcome to My Portfolio</h1>
-    </header>
+<!DOCTYPE html>
 
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-    <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm a developer passionate about creating web experiences.</p>
-      </section>
-
-      <section id="projects">
-        <h2>Projects</h2>
-        <p>Here are some of my recent projects...</p>
-      </section>
-
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your@email.com</p>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2027 My Portfolio. All rights reserved.</p>
-    </footer>
-  </body>
-</html>
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-fixed": "#002022", "secondary-fixed": "#e2e2e2", "on-primary-fixed-variant": "#004f54", "tertiary-fixed-dim": "#c8c6c5", "tertiary": "#f8f5f5", "error-container": "#93000a", "surface-container-low": "#1c1b1b", "surface-container-high": "#2a2a2a", "secondary-container": "#454747", "on-secondary-container": "#b4b5b5", "background": "#131313", "inverse-primary": "#006970", "surface-tint": "#00dbe9", "surface-variant": "#353534", "surface-bright": "#393939", "tertiary-fixed": "#e4e2e1", "primary-fixed-dim": "#00dbe9", "surface-container-lowest": "#0e0e0e", "error": "#ffb4ab", "on-tertiary": "#303030", "primary": "#dbfcff", "on-tertiary-fixed-variant": "#474746", "on-error-container": "#ffdad6", "primary-container": "#00f0ff", "on-tertiary-fixed": "#1b1c1c", "primary-fixed": "#7df4ff", "surface": "#131313", "on-primary": "#00363a", "surface-dim": "#131313", "tertiary-container": "#dbd9d8", "on-tertiary-container": "#5f5e5e", "on-secondary-fixed": "#1a1c1c", "surface-container": "#201f1f", "surface-container-highest": "#353534", "on-surface": "#e5e2e1", "on-primary-container": "#006970", "on-background": "#e5e2e1", "secondary": "#c6c6c7", "on-secondary": "#2f3131", "outline-variant": "#3b494b", "outline": "#849495", "on-surface-variant": "#b9cacb", "secondary-fixed-dim": "#c6c6c7", "inverse-surface": "#e5e2e1", "on-error": "#690005", "on-secondary-fixed-variant": "#454747", "inverse-on-surface": "#313030" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xl": "2.5rem", "margin-sm": "1rem", "space-md": "1rem", "margin": "2rem", "space-xs": "0.25rem", "gutter-sm": "1rem", "space-sm": "0.5rem", "gutter": "1.5rem", "space-lg": "1.5rem" }, fontFamily: { "label-metric": ["JetBrains Mono"], "label-tag": ["JetBrains Mono"], "headline-lg-mobile": ["Geist"], "headline-lg": ["Geist"], "label-code": ["JetBrains Mono"], "body-lg": ["Geist"], "body-sm": ["Geist"], "body-md": ["Geist"], "headline-md": ["Geist"], "headline-xl": ["Geist"], "headline-xl-mobile": ["Geist"] }, fontSize: { "label-metric": ["20px", { "lineHeight": "24px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-tag": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" }], "headline-lg-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-lg": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.03em", "fontWeight": "600" }], "label-code": ["13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "500" }], "body-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" }], "body-md": ["15px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-xl": ["56px", { "lineHeight": "60px", "letterSpacing": "-0.04em", "fontWeight": "700" }], "headline-xl-mobile": ["36px", { "lineHeight": "40px", "letterSpacing": "-0.03em", "fontWeight": "700" }] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#131313;color:#e5e2e1;}body{overscroll-behavior:none;font-family:"Geist",sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface min-h-screen text-on-surface flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-gutter-sm flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="font-label-code text-label-code text-primary-container font-semibold tracking-tight">DEV.IO</span><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span></div><div class="flex items-center gap-space-sm"><a class="font-label-code text-label-tag tracking-wider uppercase px-space-sm py-space-xs text-on-surface-variant hover:text-primary-container transition-colors duration-150 min-h-[44px] min-w-[44px] flex items-center justify-center" data-path="contact" href="#">Contact</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 px-gutter-sm bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- 1. Hero Section -->
+<section class="flex flex-col justify-center items-center text-center py-space-xl px-margin-sm relative overflow-hidden">
+<!-- Subtle Ambient Energy Glow -->
+<div class="absolute -top-12 w-64 h-64 bg-primary-container/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- Availability Status Pill (Tactile micro-interaction) -->
+<div class="inline-flex items-center gap-space-sm bg-surface-container px-space-md py-1.5 rounded-full shadow-sm mb-space-lg">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span>
+</span>
+<span class="font-label-code text-label-tag text-on-surface-variant tracking-wider uppercase">Available for Q2 Projects</span>
+</div>
+<!-- Core Headline -->
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface tracking-tight max-w-sm">
+      Full-Stack Dev <span class="text-primary-container">&amp;</span> Workflow Automator<span class="text-primary-container">.</span>
+</h1>
+<!-- Subtitle -->
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-md max-w-xs leading-relaxed">
+      Building resilient ERP backbones and dismantling operational bottlenecks with code and precision.
+    </p>
+<!-- Visual Proof / Metric Chips (Delight snippet) -->
+<div class="grid grid-cols-2 gap-space-sm w-full max-w-xs mt-space-lg">
+<div class="bg-surface-container-low rounded-xl p-space-sm text-left shadow-sm">
+<span class="font-label-metric text-label-metric text-primary-container block">99.98%</span>
+<span class="font-label-tag text-label-tag text-on-surface-variant uppercase tracking-wider block mt-0.5">Uptime Maintained</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-sm text-left shadow-sm">
+<span class="font-label-metric text-label-metric text-on-surface block">8.5x</span>
+<span class="font-label-tag text-label-tag text-on-surface-variant uppercase tracking-wider block mt-0.5">Throughput Gain</span>
+</div>
+</div>
+<!-- Action Button -->
+<a class="bg-primary-container text-on-primary-container font-label-code text-body-md font-semibold tracking-tight rounded-xl py-4 px-8 shadow-[0_0_24px_rgba(0,240,255,0.3)] mt-space-lg w-full max-w-xs min-h-[48px] flex items-center justify-center gap-space-xs active:scale-[0.98] transition-transform" href="#featured-work">
+<span>See My Work</span>
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</a>
+</section>
+<!-- 2. Tech Arsenal Section -->
+<section class="py-space-md flex flex-col">
+<div class="flex items-center justify-between px-margin-sm mb-space-sm">
+<h2 class="font-label-code text-label-tag tracking-widest uppercase text-on-surface-variant flex items-center gap-space-xs">
+<span class="text-primary-container font-bold">#</span> Tech Arsenal
+      </h2>
+<span class="font-label-code text-label-tag text-outline text-[10px] tracking-wide">SCROLL →</span>
+</div>
+<!-- Horizontal Touch Rail -->
+<div class="overflow-x-auto flex gap-space-sm px-margin-sm pb-space-sm no-scrollbar touch-pan-x">
+<div class="bg-surface-container px-4 py-2.5 rounded-full whitespace-nowrap flex items-center gap-space-xs shadow-sm flex-shrink-0 active:bg-surface-container-high transition-colors">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span class="font-label-code text-label-code text-on-surface">MERN + Vite</span>
+</div>
+<div class="bg-surface-container px-4 py-2.5 rounded-full whitespace-nowrap flex items-center gap-space-xs shadow-sm flex-shrink-0 active:bg-surface-container-high transition-colors">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span class="font-label-code text-label-code text-on-surface">Node.js</span>
+</div>
+<div class="bg-surface-container px-4 py-2.5 rounded-full whitespace-nowrap flex items-center gap-space-xs shadow-sm flex-shrink-0 active:bg-surface-container-high transition-colors">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span class="font-label-code text-label-code text-on-surface">Python</span>
+</div>
+<div class="bg-surface-container px-4 py-2.5 rounded-full whitespace-nowrap flex items-center gap-space-xs shadow-sm flex-shrink-0 active:bg-surface-container-high transition-colors">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span class="font-label-code text-label-code text-on-surface">C# / CAD APIs</span>
+</div>
+<div class="bg-surface-container px-4 py-2.5 rounded-full whitespace-nowrap flex items-center gap-space-xs shadow-sm flex-shrink-0 active:bg-surface-container-high transition-colors">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span class="font-label-code text-label-code text-on-surface">Docker</span>
+</div>
+<div class="bg-surface-container px-4 py-2.5 rounded-full whitespace-nowrap flex items-center gap-space-xs shadow-sm flex-shrink-0 active:bg-surface-container-high transition-colors">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span class="font-label-code text-label-code text-on-surface">Coolify</span>
+</div>
+</div>
+</section>
+<!-- 3. Featured Work Section -->
+<section class="py-space-md px-margin-sm flex flex-col" id="featured-work">
+<div class="flex items-center justify-between mb-space-md">
+<h2 class="font-label-code text-label-tag tracking-widest uppercase text-on-surface-variant flex items-center gap-space-xs">
+<span class="text-primary-container font-bold">#</span> Featured Work
+      </h2>
+<span class="font-label-code text-label-tag text-on-surface-variant">03 SELECTED</span>
+</div>
+<!-- Cards Stack -->
+<div class="flex flex-col gap-space-md">
+<!-- Card 1: Team Resource ERP -->
+<article class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col relative overflow-hidden transition-all active:bg-surface-container-high cursor-pointer group" onclick="toggleCard(this)">
+<div class="flex justify-between items-start mb-space-sm">
+<div class="flex flex-wrap gap-space-xs">
+<span class="font-label-code text-label-tag bg-surface-container-highest text-primary-container px-2.5 py-1 rounded-md">MERN</span>
+<span class="font-label-code text-label-tag bg-surface-container-highest text-on-surface px-2.5 py-1 rounded-md">Vite</span>
+</div>
+<div class="w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface group-hover:text-primary-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight mt-space-xs">Team Resource ERP</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
+          Real-time resource management and dynamic asset allocation engine designed for distributed enterprise scale.
+        </p>
+<!-- Rich Embedded Preview Visual -->
+<div class="mt-space-md bg-surface-container-lowest rounded-lg p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-code text-label-tag">pipeline.telemetry</span>
+<span class="font-label-code text-label-tag text-primary-container">ACTIVE</span>
+</div>
+<!-- Inline Sparkline / Flow Indicator -->
+<svg class="w-full h-10 text-primary-container" fill="none" preserveaspectratio="none" viewbox="0 0 300 40">
+<path d="M0 32 L40 28 L80 34 L120 12 L160 22 L200 8 L240 18 L280 4 L300 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M0 32 L40 28 L80 34 L120 12 L160 22 L200 8 L240 18 L280 4 L300 12 V 40 H 0 Z" fill="currentColor" fill-opacity="0.08"></path>
+</svg>
+<div class="flex justify-between items-center pt-space-xs text-on-surface-variant">
+<span class="font-label-code text-label-tag">Sync: &lt;14ms</span>
+<span class="font-label-code text-label-tag text-on-surface">Auto-balancing: ON</span>
+</div>
+</div>
+</article>
+<!-- Card 2: CAD Automation Engine -->
+<article class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col relative overflow-hidden transition-all active:bg-surface-container-high cursor-pointer group" onclick="toggleCard(this)">
+<div class="flex justify-between items-start mb-space-sm">
+<div class="flex flex-wrap gap-space-xs">
+<span class="font-label-code text-label-tag bg-surface-container-highest text-primary-container px-2.5 py-1 rounded-md">C#</span>
+<span class="font-label-code text-label-tag bg-surface-container-highest text-on-surface px-2.5 py-1 rounded-md">Python</span>
+</div>
+<div class="w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface group-hover:text-primary-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight mt-space-xs">CAD Automation Engine</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
+          Batch processing pipeline communicating directly with SolidWorks &amp; Solid Edge COM APIs to eliminate manual draftsman drafting loops.
+        </p>
+<!-- Technical Output Snippet Box -->
+<div class="mt-space-md bg-surface-container-lowest rounded-lg p-space-sm font-label-code text-label-tag">
+<div class="flex items-center gap-space-xs text-primary-container mb-1">
+<span class="material-symbols-outlined text-[14px]">terminal</span>
+<span>CLI Output // Worker 04</span>
+</div>
+<div class="text-on-surface-variant flex flex-col gap-0.5">
+<div>&gt; Invoking SolidEdge.Framework.Application</div>
+<div>&gt; Generating 1,420 sheet metal parts... <span class="text-primary-container">DONE (3.8s)</span></div>
+<div>&gt; Reduced design-to-CAM cycle by 74%</div>
+</div>
+</div>
+</article>
+<!-- Card 3: Interactive Node Editors -->
+<article class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col relative overflow-hidden transition-all active:bg-surface-container-high cursor-pointer group" onclick="toggleCard(this)">
+<div class="flex justify-between items-start mb-space-sm">
+<div class="flex flex-wrap gap-space-xs">
+<span class="font-label-code text-label-tag bg-surface-container-highest text-primary-container px-2.5 py-1 rounded-md">Konva.js</span>
+<span class="font-label-code text-label-tag bg-surface-container-highest text-on-surface px-2.5 py-1 rounded-md">Three.js</span>
+</div>
+<div class="w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface group-hover:text-primary-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight mt-space-xs">Interactive Node Editors</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
+          Browser-based high-frame-rate canvas environments with infinite panning, bezier connections, and 3D spatial inspectors.
+        </p>
+<!-- Visual Mini Schematic -->
+<div class="mt-space-md bg-surface-container-lowest rounded-lg p-space-sm flex items-center justify-around h-16 relative">
+<div class="bg-surface-container px-3 py-1.5 rounded text-center shadow-sm">
+<span class="font-label-code text-label-tag text-on-surface">Input Node</span>
+</div>
+<svg class="w-16 h-6 text-primary-container" fill="none" viewbox="0 0 64 24">
+<path d="M0 12 C32 12, 32 12, 64 12" stroke="currentColor" stroke-dasharray="3 3" stroke-width="2"></path>
+<circle cx="60" cy="12" fill="currentColor" r="3"></circle>
+</svg>
+<div class="bg-surface-container-highest px-3 py-1.5 rounded text-center shadow-sm">
+<span class="font-label-code text-label-tag text-primary-container font-semibold">Transform</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Visual Workflow Separator Card (Delight element) -->
+<section class="px-margin-sm py-space-sm">
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">hub</span>
+</div>
+<div>
+<span class="font-headline-md text-body-md text-on-surface block font-semibold">Philosophy</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Automate repetitive pain, build for speed.</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px]">bolt</span>
+</div>
+</section>
+<!-- 4. Footer & Contact -->
+<footer class="mt-space-lg pt-space-lg pb-space-xl px-margin-sm flex flex-col items-center text-center bg-surface-container-lowest rounded-t-2xl">
+<!-- Pulse badge -->
+<div class="inline-flex items-center gap-space-xs bg-surface-container px-space-md py-1.5 rounded-full shadow-sm mb-space-md">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-code text-label-tag text-on-surface">Available for contract &amp; full-time</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs leading-relaxed mb-space-lg">
+      Developer based in Hungary. Let's solve your next hardware integration or web software bottleneck.
+    </p>
+<!-- Large Touch Targets (44px+) -->
+<div class="flex items-center justify-center gap-space-sm w-full max-w-xs mb-space-lg">
+<a class="flex-1 min-h-[48px] bg-surface-container rounded-xl flex items-center justify-center gap-space-xs font-label-code text-body-sm text-on-surface hover:text-primary-container active:scale-95 transition-all shadow-sm" href="https://github.com" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>GitHub</span>
+</a>
+<a class="flex-1 min-h-[48px] bg-surface-container rounded-xl flex items-center justify-center gap-space-xs font-label-code text-body-sm text-on-surface hover:text-primary-container active:scale-95 transition-all shadow-sm" href="https://linkedin.com" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-[18px]">work</span>
+<span>LinkedIn</span>
+</a>
+<a class="flex-1 min-h-[48px] bg-surface-container rounded-xl flex items-center justify-center gap-space-xs font-label-code text-body-sm text-primary-container font-semibold active:scale-95 transition-all shadow-sm" href="mailto:hello@example.com">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+<span>Email</span>
+</a>
+</div>
+<!-- Micro Tech Monogram / Signoff -->
+<div class="flex flex-col items-center gap-1 text-outline font-label-code text-label-tag">
+<span>DEV.IO // SYSTEM ARCHITECTURE &amp; AUTOMATION</span>
+<span>CRAFTED WITH TACTILE PRECISION</span>
+</div>
+</footer>
+</div>
+<script>
+  function toggleCard(card) {
+    card.classList.add('brightness-110');
+    setTimeout(() => {
+      card.classList.remove('brightness-110');
+    }, 200);
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.3)]" data-active-classes="text-primary-container font-semibold"><div class="flex justify-around items-center h-16 px-gutter-sm"><a aria-current="page" class="flex flex-col items-center justify-center gap-space-xs min-w-[44px] min-h-[44px] transition-colors text-primary-container font-semibold" data-path="work" href="#"><span class="material-symbols-outlined text-[20px]">code</span><span class="font-label-tag text-label-tag">Work</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[44px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="architecture" href="#"><span class="material-symbols-outlined text-[20px]">account_tree</span><span class="font-label-tag text-label-tag">Arch</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[44px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="stack" href="#"><span class="material-symbols-outlined text-[20px]">terminal</span><span class="font-label-tag text-label-tag">Stack</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[44px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-label-tag text-label-tag">About</span></a></div></nav></body></html>
